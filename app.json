@@ -5,7 +5,10 @@
     "slug": "reactnative-expo-application",
     "privacy": "public",
     "sdkVersion": "28.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -21,7 +24,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ewgenius.test",
+      "publishBundlePath": "ios/reactnative-expo-application/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/reactnative-expo-application/Supporting/shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.6.5-sdk28.0.0-7eac2a72-06b2-48c9-8281-c0c6c308f0b0.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.6.2-sdk28.0.0-141d0954-b898-4919-aa89-3ab45453213f.tar.gz"
+    },
+    "scheme": "exp938d02098b534efda631a4cacd25fa52",
+    "android": {
+      "package": "com.ewgenius.test",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     }
   }
 }
